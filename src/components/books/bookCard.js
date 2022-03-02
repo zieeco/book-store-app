@@ -8,7 +8,7 @@ const BookCard = () => (
     {bookInfo.map((book) => (
       <div key={book.id} className="card">
         <BookInfo book={book} />
-        <BookProgress progress={populateProgress} />
+        <BookProgress progress={populateProgress()} />
         <Chapter />
       </div>
     ))}
