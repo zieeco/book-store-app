@@ -8,7 +8,8 @@ const Form = () => (
         placeholder="Book title"
         required
       />
-      <select name="Category" id="">
+      <select name="category" id="" required>
+        <option defaultValue="Category">Category</option>
         <option value="Action">Action</option>
         <option value="Movies">Movies</option>
         <option value="Music">Music</option>
