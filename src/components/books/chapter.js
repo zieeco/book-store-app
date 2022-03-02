@@ -5,9 +5,7 @@ const Chapter = () => (
   <div>
     <p>Current chapter</p>
     <h2>
-      {' '}
-      chapter:
-      {populateChapter()}
+      {`${' '} chapter: ${populateChapter()}`}
     </h2>
     <Button variant="contained">Update Chapter</Button>
   </div>
