@@ -16,8 +16,7 @@ const BookProgress = ({ progress }) => (
 
       <div className="percent">
         <h3>
-          {progress}
-          %
+          {`${progress}%`}
         </h3>
         <p>completed</p>
       </div>
