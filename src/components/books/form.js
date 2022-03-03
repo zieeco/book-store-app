@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../../redux/books/books';
+import { addNewBookAsync } from '../../redux/books/books';
 
 const Form = () => {
   const [title, setTitle] = useState('');
@@ -11,13 +11,13 @@ const Form = () => {
   const submitBookToStore = (e) => {
     e.preventDefault();
     const newBook = {
-      id: Date.now(),
+      item_id: Date.now(),
       title,
       category,
     };
 
     if (title !== '' && category !== 'Category') {
-      dispatch(addBook(newBook));
+      dispatch(addNewBookAsync(newBook));
       setTitle('');
       setCategory('Category');
     }
