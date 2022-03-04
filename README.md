@@ -3,6 +3,17 @@
 This project is an online book store application. A user can add, and remove a different number of books in different categories.
 more about the project are listed below.
 
+<p align="center">
+
+> || Mobile version || Destop Version ||
+> |-|---------|-|---------|-|
+> || ![Screenshot1](/src/assets/mobile.png) || ![screen2](/src/assets/desktop.png) ||
+</p>
+
+## Live Demo Link
+- [Live Link](https://relaxed-ride-bb9e65.netlify.app/)
+
+
 ## Built With
 
   ~~~ bash
