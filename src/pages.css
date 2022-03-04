@@ -207,7 +207,6 @@ header h1 {
 
 .book-sect {
   margin: 0 5%;
-  background: #fff;
   padding-bottom: 8%;
 }
 
@@ -227,7 +226,6 @@ header h1 {
   border: solid 1px white;
   background-color: #fff;
   margin-bottom: 0.75rem;
-  box-shadow: 0.15em 0.15em 7px;
 }
 
 .d-flex {
@@ -347,13 +345,14 @@ header h1 {
 
   .form-sect form input,
   .form-sect form select {
-    width: 34%;
+    width: 50%;
     margin-top: 1rem;
   }
 
   .form-sect form .submit {
-    flex: 1;
     margin-top: 1rem;
+    margin-left: 5rem;
+    width: 25%;
   }
 
   .form-sect h3 {

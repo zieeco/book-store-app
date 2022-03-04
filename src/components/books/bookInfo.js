@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// import Button from '@mui/material/Button';
 import { useDispatch } from 'react-redux';
 import { removeBookAsync } from '../../redux/books/books';
 
