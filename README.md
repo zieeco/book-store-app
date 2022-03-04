@@ -11,7 +11,7 @@ more about the project are listed below.
 </p>
 
 ## Live Demo Link
-- [Live Link](https://relaxed-ride-bb9e65.netlify.app/)
+- [Live Link](https://festive-golick-7e4d21.netlify.app/)
 
 
 ## Built With
