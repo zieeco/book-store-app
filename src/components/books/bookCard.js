@@ -15,15 +15,20 @@ const BookCard = () => {
   }, []);
 
   return (
-    <div>
-      {totalBooks.map((book) => (
-        <div key={book.item_id} className="card">
-          <BookInfo book={book} />
-          <BookProgress progress={populateProgress()} />
-          <Chapter />
-        </div>
-      ))}
-    </div>
+    <ul className="bookList">
+      <div className="card">
+        {totalBooks.map((book) => (
+          <li key={book.item_id} className="card-items w100 flex">
+            <div className="bkInfo-progress">
+              <BookInfo book={book} />
+              <BookProgress progress={populateProgress()} />
+            </div>
+            <div className="line-2" />
+            <Chapter />
+          </li>
+        ))}
+      </div>
+    </ul>
   );
 };
 
