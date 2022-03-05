@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import Button from '@mui/material/Button';
 import { useDispatch } from 'react-redux';
 import { removeBookAsync } from '../../redux/books/books';
 
@@ -10,12 +9,16 @@ const BookInfo = ({ book }) => {
   };
 
   return (
-    <div>
-      <h5>{book.category}</h5>
-      <h2>{book.title}</h2>
-      <Button variant="contained" className="btn primary">Comment</Button>
-      <Button variant="contained" className="btn primary" onClick={() => delBookFromStore(book.item_id)}>Remove</Button>
-      <Button variant="contained" className="btn primary">Edit</Button>
+    <div className="bk-info w50">
+      <h5 className="opacity">{book.category}</h5>
+      <h2 className="ff-2 fs-1 mb-2">{book.title}</h2>
+      <div className="btn-container flex w100 mb-1">
+        <button type="button" className="btn primary">Comment</button>
+        <div className="line-1" />
+        <button type="button" className="btn primary" onClick={() => delBookFromStore(book.item_id)}>Remove</button>
+        <div className="line-1" />
+        <button type="button" className="btn primary">Edit</button>
+      </div>
     </div>
   );
 };

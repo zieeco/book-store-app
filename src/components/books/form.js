@@ -24,9 +24,9 @@ const Form = () => {
   };
 
   return (
-    <section className="form-sect">
+    <section className="form-sect d-flex">
       <h3>ADD NEW BOOK</h3>
-      <form className="book-form">
+      <form className="book-form d-flex">
         <input
           type="text"
           placeholder="Book title"
@@ -42,7 +42,7 @@ const Form = () => {
           onChange={(e) => setCategory(e.target.value)}
           required
         >
-          <option defaultValue="Category">Category</option>
+          <option className="select-default" defaultValue="Category">Category</option>
           <option value="Action">Action</option>
           <option value="Movies">Movies</option>
           <option value="Music">Music</option>

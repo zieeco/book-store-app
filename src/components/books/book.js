@@ -2,10 +2,10 @@ import BookCard from './bookCard';
 import Form from './form';
 
 const Book = () => (
-  <div>
+  <section className="book-sect">
     <BookCard />
     <Form />
-  </div>
+  </section>
 );
 
 export default Book;
